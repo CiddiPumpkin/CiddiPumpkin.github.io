@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: Wayne's World
+title: CiddiPumpkin Field
 
 # Short description of your site
 description: A long term memory storage
@@ -67,17 +67,17 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: Kyujin Kim
+  name: HyeongSeok Choi
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.
 # You can reorder the items to define the link order.
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
-  email: "hysterit@gmail.com"
-  facebook: mildwhale
-  github: mildwhale
-  linkedin: kyujin-kim-9100ab135
+  email: "choihs1026@gmail.com"
+  facebook: 
+  github: 
+  linkedin: 
 #  telephone: +821090962080
 #  reddit: yourname
 #  xing: yourname
@@ -92,13 +92,13 @@ social-network-links:
 
 # Select which share links to show in posts
 share-links-active:
-  twitter: true
-  facebook: true
-  linkedin: true
+  twitter: false
+  facebook: false
+  linkedin: false
 
 # How to display the link to the website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "mildwhale.github.io"  # eg. "deanattali.com/beautiful-jekyll"
+url-pretty: "CiddiPumpkin.github.io"  # eg. "deanattali.com/beautiful-jekyll"
 
 # --- Web Statistics Section --- #
 
@@ -123,7 +123,7 @@ google_analytics: "UA-154450190-1"
 # --- Comments --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "mildwhale"
+disqus: "ciddipumpkin"
 
 # If you want to use JustComments fill with the API Key
 #just-comments: "ABCD-EFGH-IJKL"
