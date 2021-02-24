@@ -1,25 +1,25 @@
 ---
 layout: page
 title: About me
-description: iOS Software Engineer at Riiid!
+description: iOS Software Engineer at OliveHealthcare.
 ---
 
-<center><img src="/assets/images/waynekim.png" width="250" height="250" style="border-radius:50%"></center>
+<center><img src="/assets/images/davidchoi.png" width="250" height="250" style="border-radius:50%"></center>
 
-# **김규진 (Kyujin Kim)**
+# **최형석 (HyeongSeok Choi)**
 ---
-꼼꼼한 성격으로 서비스의 안정성을 중요하게 생각하며 원활한 커뮤니케이션을 지향합니다.  
-꾸준히 자기 계발을 하고 있으며 사용자에게 더 좋은 서비스를 제공하기 위해 항상 고민합니다.
+서비스의 안정성과 사용성을 중요하게 생각하며 디자이너와의 커뮤니케이션을 지향합니다.  
+간결하고 조화로운 코드를 만들기 위해 고민합니다.
 
-**Email** <mailto:hysterit@gmail.com>  
-**Github** [https://github.com/Mildwhale](https://github.com/Mildwhale)  
-**Blog** [https://mildwhale.github.io](https://mildwhale.github.io)  
+**Email** <mailto:assumed@naver.com>  
+**Github** [https://github.com/CiddiPumpkin](https://github.com/CiddiPumpkin)  
+**Blog** [https://mildwhale.github.io](https://CiddiPumpkin.github.io)  
 
 <br/>
 
 # **EXPERIENCE**
 ---
-## Riiid! (2019. 09 ~ 재직중)
+## OliveHealthcare! (2016. 10 ~ 재직중)
 RxSwift와 [DRFA](https://github.com/geppetto-ios/Geppetto)를 사용하는 [산타토익 iOS 앱](https://apps.apple.com/kr/app/산타토익-비인간적-점수상승/id1148006701)과 뤼이드의 신규 프로젝트에 참여하여 iOS 앱을 개발하고 있습니다.
 
 ### 주요 성과
@@ -59,4 +59,4 @@ C++, Objective-C, Java를 사용하여 ['나는생각 한글'](https://www.youtu
 
 # **Education**
 ---
-인천대학교 **컴퓨터공학부 학사** 졸업 (2008. 03 ~ 2014. 02)
+인천대학교 **컴퓨터공학부 학사** 졸업 (2008. 03 ~ 2015. 07)
