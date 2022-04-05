@@ -6,7 +6,7 @@ description: iOS Software Engineer at OliveHealthcare.
 
 <center><img src="/assets/images/davidchoi.png" width="250" height="250" style="border-radius:50%"></center>
 
-# **최형석 (HyeongSeok Choi)**
+# **최형석 (David Choi)**
 ---
 서비스의 안정성과 사용성을 중요하게 생각하며 디자이너, 기획자분들과 화목한 커뮤니케이션을 지향합니다.  
 안티 패턴을 사용하지 않는 코드를 만들기 위해 고민합니다.
@@ -18,7 +18,7 @@ description: iOS Software Engineer at OliveHealthcare.
 
 # **EXPERIENCE**
 ---
-## OliveHealthcare! (2016. 10 ~ 재직중)
+## OliveHealthcare (2016. 10 ~ 재직중)
 Swift를 사용하여 BLE 기반의 개인건강 관리 앱 [Bello](https://apps.apple.com/kr/app/bello-decode-your-belly-fat/id1485202681)(2인 개발), 소셜 네트워크 서비스 기반의 습관 관리 앱 [Braintingle](https://apps.apple.com/us/app/braintingle-habit-network/id1477789006)(1인 개발)을 개발했습니다.
 
 ### 주요 성과
