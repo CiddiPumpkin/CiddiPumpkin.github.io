@@ -1,3 +1,4 @@
+<!--
 ---
 layout: page
 title: About me
@@ -34,3 +35,4 @@ Swift를 사용하여 BLE 기반의 개인건강 관리 앱 [Bello](https://apps
 # **Education**
 ---
 인천대학교 **컴퓨터공학부 학사** 졸업 (2008. 03 ~ 2015. 07)
+-->
