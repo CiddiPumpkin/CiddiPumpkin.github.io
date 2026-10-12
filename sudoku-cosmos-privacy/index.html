@@ -82,7 +82,28 @@
 
   <h2>8. 📝 Changes to This Policy</h2>
   <p>We may revise this policy when app features or data practices change. We will update the date on this page and provide appropriate notice of material changes.</p>
-  <p><em>Last updated: September 30, 2026</em></p>
+  <p><em>Last updated: October 12, 2026 (Android section added)</em></p>
+
+  <h2 id="android">9. 🤖 Android Version (Google Play)</h2>
+  <p>This section applies to <strong>Sudoku Cosmos for Android</strong> distributed on Google Play. Where it differs from the sections above, this section takes precedence for the Android app.</p>
+
+  <h3>9.1 Cloud backup with Google Sign-In (Android)</h3>
+  <p>On Android, the optional manual backup uses <strong>Google Sign-In through Firebase Authentication</strong> and <strong>Cloud Firestore</strong> instead of Apple iCloud. When you choose <strong>Save to Cloud</strong> or <strong>Restore from Cloud</strong> in Settings and sign in with a Google account, the app creates a Firebase Authentication user record for that Google account (an app-scoped user ID, and the account’s email address and display name as provided by Google) and stores a single backup snapshot at <code>users/{user ID}/cosmosBackup/manual-save-v1</code>. The snapshot contains the same game records described in Section 3, a save date, and a revision identifier. Nothing is uploaded until you confirm, and there is <strong>no automatic synchronization</strong>. The app does not receive your Google password.</p>
+
+  <h3>9.2 Analytics, crash reports, and advertising (Android)</h3>
+  <p>The Android app includes <strong>Firebase Analytics</strong> and <strong>Firebase Crashlytics</strong>. They collect app usage events (for example, puzzle start and completion, shop and backup actions), crash logs, and device and app diagnostic information together with app-instance and device identifiers, so that we can understand how the game is used and fix problems. These reports are not linked to your Google Sign-In account by us. Google AdMob works as described in Section 4, except that on Android it uses the <strong>Android advertising ID</strong> (declared with the <code>AD_ID</code> permission); you can reset or delete the advertising ID in <strong>Settings → Google → Ads</strong> on your device. The Android app does not use App Tracking Transparency, which is an iOS feature.</p>
+
+  <h3>9.3 Update checks (Android)</h3>
+  <p>Instead of Apple’s lookup service, the Android app uses the <strong>Google Play In-App Updates</strong> API to check whether a newer version is available. Google Play processes this request under <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+
+  <h3 id="android-account-deletion">9.4 Deleting your cloud backup and account (Android)</h3>
+  <p>You can delete the data associated with your Google account at any time, directly in the app:</p>
+  <ol>
+    <li>Open <strong>Settings</strong> (the gear icon on the home screen) → <strong>Cloud Backup</strong>.</li>
+    <li>Tap <strong>Delete Cloud Backup &amp; Unlink Account</strong> and confirm.</li>
+  </ol>
+  <p>This immediately deletes the backup snapshot stored in Cloud Firestore and the Firebase Authentication user record created for Sudoku Cosmos, and signs the app out of your Google account. Game records stored on your device are not changed; you can remove them by clearing the app’s data or uninstalling the app. After deletion, no data linked to your Google account remains on our side. Analytics and crash reports that are not linked to your account are retained by Google for the Firebase default retention periods and then deleted.</p>
+  <p>If you can no longer access the app, you can also request deletion by email: send a message to <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a> from the Google account you used for the backup, with the subject <strong>“Sudoku Cosmos account deletion”</strong>. We will delete the backup snapshot and the account record within 30 days and confirm by reply. We may ask you to verify that you own the Google account before deleting.</p>
 
   <hr />
 </body>
