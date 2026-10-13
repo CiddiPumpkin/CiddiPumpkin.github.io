@@ -141,8 +141,12 @@
     select.value = locale;
   }
 
-  let preferred = 'ko';
-  try { preferred = localStorage.getItem(storageKey) || 'ko'; } catch (_) { /* Storage can be unavailable. */ }
+  const browserLanguage = navigator.languages?.[0] || navigator.language || 'en';
+  let preferred = /^ko(?:-|$)/i.test(browserLanguage) ? 'ko' : 'en';
+  try {
+    const saved = localStorage.getItem(storageKey);
+    if (saved === 'ko' || saved === 'en') preferred = saved;
+  } catch (_) { /* Use the browser locale when storage is unavailable. */ }
   applyLanguage(preferred);
   select.addEventListener('change', () => {
     applyLanguage(select.value);
