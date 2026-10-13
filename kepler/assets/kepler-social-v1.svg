@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#f4f3ed"/>
+  <g transform="translate(66 56) scale(.7)" fill="none" stroke="#252721" stroke-width="3">
+    <ellipse cx="32" cy="32" rx="28" ry="12" transform="rotate(-38 32 32)"/>
+    <circle cx="32" cy="32" r="8"/>
+    <circle cx="52" cy="15" r="5" fill="#252721" stroke="none"/>
+  </g>
+  <text x="122" y="89" fill="#252721" font-family="Helvetica, Arial, sans-serif" font-size="39" font-weight="700" letter-spacing="-2">kepler.</text>
+  <text x="68" y="187" fill="#62675b" font-family="Helvetica, Arial, sans-serif" font-size="14" font-weight="600" letter-spacing="3.1">INDEPENDENT APP STUDIO</text>
+  <g fill="#252721" font-family="Helvetica, Arial, sans-serif" font-size="78" font-weight="500" letter-spacing="-4">
+    <text x="63" y="300">A little space</text>
+    <text x="63" y="392">for <tspan font-family="Georgia, Times New Roman, serif" font-style="italic" letter-spacing="-3">everyday</tspan><tspan dx="16">life.</tspan></text>
+  </g>
+  <g transform="translate(925 294) rotate(-38)" fill="none">
+    <ellipse rx="190" ry="89" stroke="#c2c7b5" stroke-width="2"/>
+    <circle r="43" stroke="#252721" stroke-width="2"/>
+    <circle cx="172" cy="38" r="13" fill="#7b886a"/>
+  </g>
+  <path d="M68 511H1132" stroke="#d0d2c6"/>
+  <text x="68" y="558" fill="#62675b" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing=".2">Plander <tspan fill="#a0a595">/</tspan> Cosmos</text>
+  <text x="1132" y="558" text-anchor="end" fill="#62675b" font-family="Helvetica, Arial, sans-serif" font-size="16">Thoughtfully made by Kepler.</text>
+</svg>

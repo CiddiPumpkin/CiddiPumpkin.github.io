@@ -55,3 +55,10 @@ The native language selector in the top-right header offers 한국어 and Englis
 - Follow iOS App Store, email, Plander and Sudoku privacy links.
 - Verify GitHub Pages deployment and live page after publishing.
 - Organization/site verification is a separate task: publishing this page does not itself complete Search Console or Play Console verification.
+
+
+## Social sharing preview
+
+`assets/kepler-social-v1.png` is the 1200 × 630 share image, explicitly linked by the static Open Graph and Twitter card metadata in `index.html`. The editable source is `assets/kepler-social-v1.svg`. The artwork reuses the website’s warm paper, graphite typography, serif emphasis, and original orbital mark; it represents the whole studio rather than an automatically cropped Plander screenshot. The image is fully readable without executing JavaScript. The short shared title is “Kepler — Independent App Studio”.
+
+Keep the image publicly accessible at its absolute metadata URL. When changing the artwork, use a new filename and update both image tags so crawlers see the new asset. Messaging and social services cache link previews independently; an existing message can retain the old preview after deployment, and recrawling is not guaranteed immediately.
