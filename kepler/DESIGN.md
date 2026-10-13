@@ -2,7 +2,7 @@
 
 ## Direction
 
-Quiet editorial layout for a small independent app studio. Warm paper, graphite type, fine dividing lines, a lilac Plander showcase, and two muted puzzle illustrations. The orbital symbol is an original SVG drawing connecting the Kepler name with the future Cosmos series. No external fonts, frameworks, cookies, analytics, or JavaScript are loaded by this page.
+Quiet editorial layout for a small independent app studio. Warm paper, graphite type, fine dividing lines, a lilac Plander showcase, and two muted puzzle illustrations. The orbital symbol is an original SVG drawing connecting the Kepler name with the future Cosmos series. No external fonts, frameworks, cookies, or analytics are loaded by this page. A small local script handles Korean/English text and remembers only the chosen language in browser localStorage.
 
 The opening statement establishes the studio; the first product is demonstrated by a real screen; future releases are explicitly marked; studio and support information close the page. This order can grow without redesigning the whole site.
 
@@ -39,11 +39,18 @@ For a new app, follow the semantic `article.future` structure, create original d
 
 ## Accessibility and privacy
 
-Native headings and navigation, keyboard skip link, visible focus, descriptive screenshot alt text, decorative art hidden from assistive technology. Responsive single-column layout at 760px, reduced-motion preference honored. No forms and no collected website data; support opens the user's mail client. External destination sites have their own policies.
+Native headings and navigation, keyboard skip link, visible focus, descriptive screenshot alt text, decorative art hidden from assistive technology. Responsive single-column layout at 760px, reduced-motion preference honored. No submitted forms or website analytics; support opens the user's mail client. The language preference stays in the visitor's browser and is not transmitted. External destination sites have their own policies.
+
+## Languages
+
+The native language selector in the top-right header offers 한국어 and English. Korean is the default; a valid saved choice is restored on return. Storage failures do not prevent switching. Without JavaScript, all Korean content and links remain usable and the inactive selector stays hidden. On phones, navigation occupies a second row to keep the wordmark and selector clear.
+
+`language.js` contains the complete keyed dictionary. `data-i18n` marks trusted static markup; `data-i18n-content`, `data-i18n-alt`, and `data-i18n-aria-label` mark translated metadata and accessible descriptions. Update both languages when product copy or availability changes. The English brand headline and app names remain shared. Existing linked privacy policies retain their own language and legal content; selecting English does not translate legal documents or the embedded Korean app screenshot.
 
 ## Verification checklist
 
-- Review desktop and mobile renders, including 320px viewport.
+- Review Korean and English desktop and mobile renders, including 320px viewport.
+- Test keyboard language selection, saved choice after reload, unavailable localStorage, and the usable Korean page with JavaScript disabled.
 - Confirm no horizontal overflow, link overlap, missing assets, or inaccessible focus indicators.
 - Follow iOS App Store, email, Plander and Sudoku privacy links.
 - Verify GitHub Pages deployment and live page after publishing.
