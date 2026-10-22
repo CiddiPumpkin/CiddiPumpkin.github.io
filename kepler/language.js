@@ -8,8 +8,8 @@
     "en": "Kepler — A little space for everyday life."
   },
   "description": {
-    "ko": "Kepler는 일상에 작은 여유를 만드는 독립 앱 스튜디오입니다. Plander와 출시 예정인 Sudoku: Cosmos, Nonogram: Cosmos를 만나보세요.",
-    "en": "Kepler is an independent app studio making a little space for everyday life. Discover Plander and the upcoming Sudoku: Cosmos and Nonogram: Cosmos."
+    "ko": "Kepler는 일상에 작은 여유를 만드는 독립 앱 스튜디오입니다. Plander, Sudoku: Cosmos와 출시 예정인 Nonogram: Cosmos를 만나보세요.",
+    "en": "Kepler is an independent app studio making a little space for everyday life. Discover Plander, Sudoku: Cosmos, and the upcoming Nonogram: Cosmos."
   },
   "ogDescription": {
     "ko": "일상을 정리하고, 생각에 잠시 여유를. Plander와 Cosmos 시리즈를 만드는 독립 앱 스튜디오.",
@@ -40,8 +40,8 @@
     "en": "Small apps. More room for life."
   },
   "released": {
-    "ko": "<i></i>iOS 출시",
-    "en": "<i></i>Available on iOS"
+    "ko": "<i></i>iOS · Android 출시",
+    "en": "<i></i>Available on iOS & Android"
   },
   "icon": {
     "ko": "Plander 앱 아이콘",
@@ -59,9 +59,17 @@
     "ko": "App Store에서 다운로드",
     "en": "Download on the App Store"
   },
-  "android": {
-    "ko": "Android 버전은 준비 중입니다.",
-    "en": "Coming to Android."
+  "googlePlay": {
+    "ko": "Google Play에서 다운로드",
+    "en": "Get it on Google Play"
+  },
+  "androidReleased": {
+    "ko": "<i></i>Android 출시",
+    "en": "<i></i>Available on Android"
+  },
+  "iosComing": {
+    "ko": "iOS 버전은 준비 중입니다.",
+    "en": "Coming to iOS."
   },
   "privacy": {
     "ko": "개인정보처리방침 <span aria-hidden=\"true\">↗</span>",
@@ -76,8 +84,8 @@
     "en": "A little focus, coming next."
   },
   "sudoku": {
-    "ko": "숫자 사이에서 찾는 잠깐의 몰입.<br>새로운 스도쿠 경험을 준비하고 있습니다.",
-    "en": "Find a moment of focus between the numbers.<br>A new Sudoku experience is on its way."
+    "ko": "숫자 사이에서 찾는 잠깐의 몰입.<br>이제 Android에서 만나보세요.",
+    "en": "Find a moment of focus between the numbers.<br>Now available on Android."
   },
   "coming": {
     "ko": "iOS · Android 출시 예정",

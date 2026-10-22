@@ -20,8 +20,9 @@ These are references for principles, not copied templates or assets:
 ## Content and source of truth
 
 - Kepler / 케플러 is the studio identity provided by the owner.
-- Plander: iOS released; Android coming soon.
-- Sudoku: Cosmos and Nonogram: Cosmos: both iOS and Android coming soon.
+- Plander: iOS and Android released (`com.ciddipumpkin.plander` on Google Play).
+- Sudoku: Cosmos: Android released (`com.ciddipumpkin.sudokucosmos` on Google Play); iOS coming soon.
+- Nonogram: Cosmos: both iOS and Android coming soon.
 - Do not convert upcoming labels into store buttons until the owner confirms release and provides URLs.
 - Support: `plander.cs@gmail.com`, verified in Plander's contact implementation.
 - Plander privacy policy: copied without content changes from `Plander/Resources/HTML/plander_privacy_policy.html`. Owner should review policy applicability when app behavior changes.
@@ -52,7 +53,7 @@ The native language selector in the top-right header offers 한국어 and Englis
 - Review Korean and English desktop and mobile renders, including 320px viewport.
 - Test first visits with Korean, English, and other browser locales; invalid or unavailable localStorage; valid saved-choice priority after reload; keyboard language selection; and the usable Korean page with JavaScript disabled.
 - Confirm no horizontal overflow, link overlap, missing assets, or inaccessible focus indicators.
-- Follow iOS App Store, email, Plander and Sudoku privacy links.
+- Follow iOS App Store, Google Play, email, Plander and Sudoku privacy links.
 - Verify GitHub Pages deployment and live page after publishing.
 - Organization/site verification is a separate task: publishing this page does not itself complete Search Console or Play Console verification.
 
