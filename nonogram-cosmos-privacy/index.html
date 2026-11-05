@@ -3,22 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="color-scheme" content="light dark" />
   <title>Nonogram Cosmos Privacy Policy</title>
   <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --heading: #222;
+      --link: #0066cc;
+      --line: #d9d9d9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #080d23;
+        --text: #e7e9f8;
+        --heading: #ffffff;
+        --link: #b6acf3;
+        --line: #30364c;
+      }
+    }
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Hiragino Sans", Roboto, Helvetica, Arial, sans-serif;
       line-height: 1.6;
       padding: 20px;
       max-width: 800px;
       margin: auto;
-      background-color: #f9f9f9;
-      color: #333;
+      background-color: var(--bg);
+      color: var(--text);
+      overflow-wrap: break-word;
     }
-    h1, h2 {
-      color: #222;
+    h1, h2, h3 {
+      color: var(--heading);
     }
     a {
-      color: #0066cc;
+      color: var(--link);
       text-decoration: none;
     }
     a:hover {
@@ -26,10 +44,69 @@
     }
     hr {
       margin: 40px 0;
+      border: 0;
+      border-top: 1px solid var(--line);
     }
+    [lang="ko"] p, [lang="ko"] li, [lang="ko"] h1, [lang="ko"] h2 {
+      word-break: keep-all;
+    }
+    /* Language selection sits at the top right, as on the Kepler page. */
+    .topbar {
+      display: flex;
+      justify-content: flex-end;
+      min-height: 44px;
+    }
+    .language-control {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text);
+    }
+    .language-control[hidden] { display: none; }
+    .language-control select {
+      min-height: 44px;
+      padding: 8px 2px;
+      border: 0;
+      border-radius: 0;
+      color: var(--text);
+      background: transparent;
+      font: inherit;
+      font-size: 14px;
+      cursor: pointer;
+    }
+    .language-control select:focus-visible {
+      outline: 2px solid var(--link);
+      outline-offset: 4px;
+    }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    article[hidden] { display: none; }
   </style>
 </head>
 <body>
+  <div class="topbar">
+    <div class="language-control" hidden>
+      <label class="visually-hidden" for="language">Language</label>
+      <svg aria-hidden="true" viewBox="0 0 20 20" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="10" cy="10" r="7.5"/><ellipse cx="10" cy="10" rx="3.2" ry="7.5"/><path d="M2.5 10h15"/></svg>
+      <select id="language" name="language">
+        <option value="ko" lang="ko">한국어</option>
+        <option value="en" lang="en">English</option>
+        <option value="ja" lang="ja">日本語</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- English -->
+  <article lang="en" data-lang="en" data-title="Nonogram Cosmos Privacy Policy">
   <h1>Privacy Policy</h1>
   <p><strong>Effective Date:</strong> November 5, 2026<br />
   <strong>App Name:</strong> Nonogram Cosmos<br />
@@ -90,8 +167,175 @@
 
   <h2>10. 📝 Changes to This Policy</h2>
   <p>We may revise this policy when app features or data practices change. We will update the date on this page and provide appropriate notice of material changes.</p>
-  <p><em>Last updated: November 6, 2026 (app update checks added)</em></p>
+  <p><em>Last updated: November 6, 2026 (app update checks and Korean and Japanese versions added)</em></p>
+  </article>
+
+  <!-- 한국어 -->
+  <article lang="ko" data-lang="ko" data-title="Nonogram Cosmos 개인정보처리방침" hidden>
+  <h1>개인정보처리방침</h1>
+  <p><strong>시행일:</strong> 2026년 11월 5일<br />
+  <strong>앱 이름:</strong> Nonogram Cosmos<br />
+  <strong>개발자:</strong> CiddiPumpkin</p>
+
+  <h2>1. 📌 요약</h2>
+  <p>Nonogram Cosmos는 별도의 게임 계정 가입 없이 이용할 수 있습니다. 게임 진행은 기기에 저장되며, 원하는 경우 Apple iCloud 계정에 직접 백업할 수 있습니다. 개발자가 운영하는 서버로 게임 기록을 전송하지 않습니다.</p>
+  <p>앱은 광고 제공에 Google AdMob을, 선택 사항인 광고 제거 구매에 Apple App Store를 사용하며, 앱 업데이트 확인을 위해 Apple에 접속합니다. 이메일로 문의하시면 메일에 포함된 정보를 받게 됩니다. 각 서비스와 선택 사항은 아래에서 설명합니다.</p>
+
+  <h2>2. 💾 기기에 저장하는 정보</h2>
+  <p>앱은 게임을 실행하고 진행 상황을 보존하는 데 필요한 정보를 기기에 저장합니다.</p>
+  <ul>
+    <li>진행 중인 퍼즐: 표시한 칸, 되돌리기 기록, 사용한 힌트</li>
+    <li>완료한 퍼즐, 발견, 이야기 진행, 본 엔딩, 마지막으로 방문한 장소</li>
+    <li>얻고 사용한 별빛, 보유·장착한 아이템(동행 캐릭터, 코스튬, 보드·화면 테마 등)과 각 아이템을 얻은 시각</li>
+    <li>중복 보상을 막기 위한 사용한 선물 코드 식별자</li>
+    <li>소리·진동 등 설정과 튜토리얼 완료 여부</li>
+    <li>하루 무료 도전 사용 횟수와 광고 제거 구매 상태. 이 정보는 기기에만 남으며 iCloud 수동 백업에 포함되지 않습니다.</li>
+  </ul>
+  <p>앱은 연락처, 카메라, 마이크, 정확한 위치, Apple 계정 비밀번호에 대한 접근을 요청하지 않습니다.</p>
+
+  <h2>3. ☁️ 선택적 iCloud 수동 백업</h2>
+  <p>설정의 <strong>iCloud 연동</strong>에서 <strong>iCloud에 저장하기</strong>를 선택하고 확인하면, 게임 기록과 진행 중인 퍼즐의 스냅샷을 로그인한 Apple 계정의 앱 전용 CloudKit 비공개 데이터베이스에 업로드합니다. 스냅샷에는 저장 날짜와 데이터 형식 버전이 포함됩니다. 저장을 확인할 때마다 이전 스냅샷을 교체하며, <strong>자동 동기화는 하지 않습니다</strong>.</p>
+  <p>같은 Apple 계정인지 확인하기 위해 CloudKit이 제공하는 앱 범위의 계정 식별자를 일시적으로 사용합니다. Apple 계정의 이름이나 이메일 주소는 요청하지 않습니다.</p>
+  <p>백업을 가져오려면 확인이 필요하며, 현재 기기의 게임 기록이 교체됩니다. 해당 기기의 소리·진동 설정과 이미 사용한 선물 코드 이력은 유지됩니다. 같은 Apple 계정으로 로그인한 다른 기기에서도 스냅샷을 가져올 수 있습니다. Apple은 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a>과 관련 iCloud 약관에 따라 iCloud 데이터를 처리합니다.</p>
+
+  <h2>4. 📊 광고와 Google AdMob</h2>
+  <p>Nonogram Cosmos는 Google Mobile Ads SDK를 통해 배너, 전면, 보상형 광고를 표시합니다. 광고 제공, 성능 측정, 사용 분석, 부정 사용 방지를 위해 Google은 다음 정보를 처리할 수 있습니다.</p>
+  <ul>
+    <li>IP 주소(대략적인 위치 추정에 사용될 수 있음)</li>
+    <li>허용된 경우 광고 식별자를 포함한 기기·앱 식별자</li>
+    <li>광고 및 앱과의 상호작용 정보</li>
+    <li>진단·성능 정보</li>
+  </ul>
+  <p>실제로 처리되는 정보는 SDK 구성, 기기 설정, 동의 상태에 따라 달라집니다. iOS에서 광고 식별자(IDFA)는 앱 추적 투명성(ATT) 권한을 허용한 경우에만 사용할 수 있습니다. 이 권한은 <strong>설정 → 개인정보 보호 및 보안 → 추적</strong>에서 변경할 수 있습니다. 추적을 허용하지 않아도 게임을 이용할 수 있고 광고는 계속 표시될 수 있으며, 광고와 관련된 모든 정보 처리가 중단되지는 않습니다.</p>
+  <p>광고 제거를 구매하면 앱은 광고를 더 이상 요청하지 않으며, 다음 실행부터 Google Mobile Ads SDK를 시작하지 않습니다.</p>
+  <p>자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>, <a href="https://policies.google.com/technologies/ads">Google 광고 정보 안내</a>, <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK 데이터 공개</a>를 확인해 주세요.</p>
+
+  <h2>5. 🛒 인앱 구매(광고 제거)</h2>
+  <p>광고 제거는 Apple App Store를 통한 선택적 1회 구매입니다. 결제는 Apple이 처리하며, 앱은 결제 카드나 청구 정보를 받지 않습니다. 앱은 개발자 서버 없이 Apple이 제공한 서명된 구매 기록을 기기에서 확인하고, 광고 제거 여부를 기기에 저장합니다. 같은 Apple 계정으로 로그인한 다른 기기에서는 <strong>구매 복원</strong>으로 구매를 다시 적용할 수 있습니다. Apple의 구매 정보 처리에는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a>이 적용됩니다.</p>
+
+  <h2>6. 🔄 앱 업데이트 확인</h2>
+  <p>앱을 실행하면 Nonogram Cosmos는 앱의 번들 식별자와 기기 지역 설정에서 가져온 국가 코드로 Apple의 앱 조회 서비스에 접속합니다. 이때 Apple은 IP 주소 등 일반적인 네트워크 요청 정보도 받습니다. 앱은 받은 버전을 설치된 버전과 비교하고, 기기의 iOS 호환성을 확인합니다. 퍼즐 진행과 게임 기록은 이 요청에 포함되지 않습니다.</p>
+  <p>호환되는 새 버전이 확인되면 계속하기 전에 업데이트를 안내합니다. Apple의 요청 정보 처리에는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a>이 적용됩니다.</p>
+
+  <h2>7. 🖼️ 엽서 저장과 공유</h2>
+  <p>감상하기에서 엽서 이미지를 만들고 iOS 공유 시트로 공유할 수 있습니다. 엽서를 사진 앱에 저장하기로 선택하면 iOS가 사진 보관함에 이미지를 추가할 권한을 요청합니다. 앱은 저장하기로 선택한 이미지만 추가하며, 기존 사진을 읽지 않습니다. 공유한 내용은 사용자가 선택한 앱이나 서비스가 처리합니다.</p>
+
+  <h2>8. 📮 이메일 문의와 개인정보 관련 요청</h2>
+  <p><strong>문의하기</strong>를 누르면 <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>으로 보내는 이메일 초안이 열립니다. 문제 확인을 돕기 위해 초안에는 기기 모델, 앱 버전, 운영체제 버전이 포함됩니다. 보내기 전에 초안을 확인하고 수정할 수 있으며, 앱이 메일을 자동으로 보내지 않습니다.</p>
+  <p>이메일을 보내시면 이메일 주소, 메시지, 직접 첨부한 파일을 받게 됩니다. 이 정보는 문의에 답변하고 요청을 처리하는 데 사용합니다. 사용 중인 이메일 서비스도 자체 정책에 따라 메시지를 처리합니다.</p>
+  <p>개인정보에 관한 질문이나 열람·정정·삭제 요청은 <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>으로 연락해 주세요. 요청에 따라 본인 확인이 필요하거나, Apple 또는 Google이 관리하는 데이터는 해당 회사로 안내할 수 있습니다.</p>
+
+  <h2>9. 🗂️ 보관과 삭제</h2>
+  <p>게임 기록은 앱이 사용하는 동안 기기에 남아 있습니다. 앱을 삭제하면 기기의 앱 데이터가 제거됩니다. 앱 정리(오프로드)나 기기 백업 복원 시에는 데이터가 유지되거나 복원될 수 있습니다.</p>
+  <p>앱을 삭제해도 iCloud 스냅샷이 반드시 삭제되지는 않습니다. Apple 계정과 iCloud 저장 공간 설정에서 사용할 수 있는 관리 기능을 확인할 수 있으며, 기능은 운영체제와 서비스에 따라 다릅니다. 현재 앱 안에는 CloudKit 스냅샷을 삭제하는 별도 기능이 없습니다.</p>
+  <p>문의 메일은 요청에 답변하고 문제를 해결하며 관련 의무를 이행하는 데 필요한 기간 동안 보관합니다. Apple, Google, 이메일 서비스 제공자가 처리하는 정보의 보관과 삭제는 각 회사의 정책에 따릅니다.</p>
+
+  <h2>10. 📝 방침 변경</h2>
+  <p>앱 기능이나 정보 처리 방식이 바뀌면 이 방침을 수정할 수 있습니다. 수정 시 이 페이지의 날짜를 갱신하고, 중요한 변경은 적절한 방법으로 알려 드립니다.</p>
+  <p><em>최종 수정: 2026년 11월 6일 (앱 업데이트 확인, 한국어·일본어 추가)</em></p>
+  </article>
+
+  <!-- 日本語 -->
+  <article lang="ja" data-lang="ja" data-title="Nonogram Cosmos プライバシーポリシー" hidden>
+  <h1>プライバシーポリシー</h1>
+  <p><strong>施行日：</strong>2026年11月5日<br />
+  <strong>アプリ名：</strong>Nonogram Cosmos<br />
+  <strong>開発者：</strong>CiddiPumpkin</p>
+
+  <h2>1. 📌 概要</h2>
+  <p>Nonogram Cosmosは、ゲームアカウントを作成せずにご利用いただけます。ゲームの進行状況は端末に保存され、必要に応じてApple iCloudアカウントへ手動でバックアップできます。ゲームの記録を開発者が運営するサーバーへ送信することはありません。</p>
+  <p>本アプリは、広告の配信にGoogle AdMobを、任意の「広告を削除」の購入にAppleのApp Storeを使用し、アプリのアップデート確認のためにAppleへ接続します。メールでお問い合わせいただいた場合は、メールに含まれる情報を受け取ります。各サービスと選択肢について、以下で説明します。</p>
+
+  <h2>2. 💾 端末に保存する情報</h2>
+  <p>本アプリは、ゲームの実行と進行状況の保持に必要な次の情報を端末に保存します。</p>
+  <ul>
+    <li>進行中のパズル（マークしたマス、元に戻す履歴、使用したヒント）</li>
+    <li>完了したパズル、発見、物語の進行状況、見たエンディング、最後に訪れた場所</li>
+    <li>獲得・使用した星明かり、所持・装備しているアイテム（仲間キャラクター、コスチューム、盤面・画面テーマなど）と各アイテムの入手日時</li>
+    <li>報酬の重複を防ぐための、使用済みギフトコードの識別子</li>
+    <li>サウンドや振動などの設定、チュートリアルの完了状況</li>
+    <li>1日の無料チャレンジの使用回数と「広告を削除」の購入状態。これらは端末内にのみ残り、iCloudへの手動バックアップには含まれません。</li>
+  </ul>
+  <p>本アプリは、連絡先、カメラ、マイク、正確な位置情報、Appleアカウントのパスワードへのアクセスを求めません。</p>
+
+  <h2>3. ☁️ 任意のiCloud手動バックアップ</h2>
+  <p>設定の<strong>iCloud連携</strong>で<strong>iCloudに保存</strong>を選んで確認すると、ゲームの記録と進行中のパズルのスナップショットを、サインインしているAppleアカウントの本アプリ専用CloudKitプライベートデータベースにアップロードします。スナップショットには保存日時とデータ形式のバージョンが含まれます。保存を確認するたびに以前のスナップショットが置き換えられ、<strong>自動同期は行いません</strong>。</p>
+  <p>同じAppleアカウントであることを確認するため、CloudKitが提供するアプリ専用のアカウント識別子を一時的に使用します。Appleアカウントの名前やメールアドレスは要求しません。</p>
+  <p>バックアップの復元には確認が必要で、現在の端末のゲーム記録が置き換えられます。その端末のサウンド・振動の設定と、すでに使用したギフトコードの履歴は維持されます。同じAppleアカウントでサインインした別の端末でもスナップショットを復元できます。AppleはiCloudのデータを<a href="https://www.apple.com/legal/privacy/">Appleプライバシーポリシー</a>および関連するiCloud規約に基づいて取り扱います。</p>
+
+  <h2>4. 📊 広告とGoogle AdMob</h2>
+  <p>Nonogram Cosmosは、Google Mobile Ads SDKを通じてバナー広告、インタースティシャル広告、リワード広告を表示します。広告の配信、効果測定、利用状況の分析、不正利用の防止のため、Googleは次の情報を処理することがあります。</p>
+  <ul>
+    <li>IPアドレス（おおよその位置の推定に使用される場合があります）</li>
+    <li>許可されている場合は広告識別子を含む、端末とアプリの識別子</li>
+    <li>広告やアプリとのやり取りに関する情報</li>
+    <li>診断・パフォーマンス情報</li>
+  </ul>
+  <p>実際に処理される情報は、SDKの構成、端末の設定、同意の状況によって異なります。iOSでは、広告識別子（IDFA）の利用にApp Tracking Transparency（ATT）の許可が必要です。この許可は<strong>設定 → プライバシーとセキュリティ → トラッキング</strong>で変更できます。トラッキングを許可しなくてもゲームはご利用いただけ、広告は引き続き表示されることがあります。また、広告に関するすべての情報処理が停止するわけではありません。</p>
+  <p>「広告を削除」を購入すると、アプリは広告をリクエストしなくなり、次回以降の起動時にGoogle Mobile Ads SDKを開始しません。</p>
+  <p>詳しくは、<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>、<a href="https://policies.google.com/technologies/ads">Googleの広告に関する情報</a>、<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのデータ開示</a>をご確認ください。</p>
+
+  <h2>5. 🛒 アプリ内課金（広告を削除）</h2>
+  <p>「広告を削除」は、AppleのApp Storeを通じた任意の買い切り購入です。決済はAppleが行い、アプリが支払いカードや請求先の情報を受け取ることはありません。アプリは開発者のサーバーを使わずに、Appleが提供する署名付きの購入記録を端末上で確認し、広告削除の状態を端末に保存します。同じAppleアカウントでサインインした別の端末では、<strong>購入を復元</strong>で購入を再適用できます。Appleによる購入情報の取り扱いには<a href="https://www.apple.com/legal/privacy/">Appleプライバシーポリシー</a>が適用されます。</p>
+
+  <h2>6. 🔄 アプリのアップデート確認</h2>
+  <p>アプリの起動時に、Nonogram CosmosはアプリのバンドルIDと端末の地域設定から取得した国コードを使って、Appleのアプリ照会サービスに接続します。このときAppleは、IPアドレスなど通常のネットワーク通信の情報も受け取ります。アプリは取得したバージョンをインストール済みのバージョンと比較し、端末のiOSとの互換性を確認します。パズルの進行状況やゲームの記録はこの通信に含まれません。</p>
+  <p>互換性のある新しいバージョンが確認された場合は、続ける前にアップデートをご案内します。Appleによる通信情報の取り扱いには<a href="https://www.apple.com/legal/privacy/">Appleプライバシーポリシー</a>が適用されます。</p>
+
+  <h2>7. 🖼️ はがきの保存と共有</h2>
+  <p>鑑賞モードでは、はがき画像を作成し、iOSの共有シートで共有できます。はがきを写真アプリに保存することを選んだ場合、iOSが写真ライブラリへの画像追加の許可を求めます。アプリは保存を選んだ画像のみを追加し、既存の写真を読み取ることはありません。共有した内容は、選択したアプリやサービスによって取り扱われます。</p>
+
+  <h2>8. 📮 メールでのお問い合わせとプライバシーに関するご依頼</h2>
+  <p><strong>お問い合わせ</strong>を選ぶと、<a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>宛てのメールの下書きが開きます。問題の調査に役立てるため、下書きには端末の機種、アプリのバージョン、OSのバージョンが含まれます。送信前に下書きを確認・編集でき、アプリがメールを自動で送信することはありません。</p>
+  <p>メールを送信いただいた場合、メールアドレス、メッセージ、添付を選んだファイルを受け取ります。これらの情報は、お問い合わせへの回答とご依頼への対応に使用します。ご利用のメールサービスも、独自のポリシーに基づいてメッセージを取り扱います。</p>
+  <p>プライバシーに関するご質問や、情報の開示・訂正・削除のご依頼は、<a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>までご連絡ください。ご依頼の内容によっては、本人確認をお願いする場合や、AppleまたはGoogleが管理するデータについては各社をご案内する場合があります。</p>
+
+  <h2>9. 🗂️ 保管と削除</h2>
+  <p>ゲームの記録は、アプリが使用している間、端末に保存されます。アプリを削除すると、端末のアプリデータが削除されます。アプリの取り除きや端末バックアップからの復元では、データが保持または復元される場合があります。</p>
+  <p>アプリを削除しても、iCloudのスナップショットが必ず削除されるわけではありません。Appleアカウントの設定やiCloudストレージの設定で利用できる管理機能をご確認ください。機能はOSやサービスによって異なります。現在、アプリ内にCloudKitのスナップショットを削除する個別の機能はありません。</p>
+  <p>お問い合わせのメールは、ご依頼への回答、問題の解決、関連する義務の履行に必要な期間保管します。Apple、Google、メールサービス提供者が取り扱う情報の保管と削除は、各社のポリシーに従います。</p>
+
+  <h2>10. 📝 本ポリシーの変更</h2>
+  <p>アプリの機能や情報の取り扱い方法が変わった場合、本ポリシーを改訂することがあります。改訂時にはこのページの日付を更新し、重要な変更は適切な方法でお知らせします。</p>
+  <p><em>最終更新日：2026年11月6日（アプリのアップデート確認、韓国語・日本語版を追加）</em></p>
+  </article>
 
   <hr />
+
+  <script>
+    // Language order: ?lang= (the app passes its own language) → saved choice → browser language → English.
+    (() => {
+      'use strict';
+      const supported = ['ko', 'en', 'ja'];
+      const storageKey = 'nonogram-cosmos-privacy.language';
+      const select = document.getElementById('language');
+      const control = document.querySelector('.language-control');
+      const articles = document.querySelectorAll('article[data-lang]');
+      const pick = value => {
+        const code = String(value || '').toLowerCase().split(/[-_]/)[0];
+        return supported.includes(code) ? code : null;
+      };
+
+      function apply(language) {
+        articles.forEach(article => { article.hidden = article.dataset.lang !== language; });
+        const active = document.querySelector(`article[data-lang="${language}"]`);
+        document.documentElement.lang = language;
+        if (active) document.title = active.dataset.title;
+        select.value = language;
+      }
+
+      let preferred = pick(new URLSearchParams(location.search).get('lang'));
+      if (!preferred) {
+        try { preferred = pick(localStorage.getItem(storageKey)); } catch (_) { /* Storage may be unavailable. */ }
+      }
+      if (!preferred) preferred = pick((navigator.languages && navigator.languages[0]) || navigator.language) || 'en';
+      apply(preferred);
+      select.addEventListener('change', () => {
+        apply(select.value);
+        try { localStorage.setItem(storageKey, select.value); } catch (_) { /* Switching still works for this visit. */ }
+      });
+      control.hidden = false;
+    })();
+  </script>
 </body>
 </html>
