@@ -114,7 +114,7 @@
 
   <h2>1. 📌 Summary</h2>
   <p>Nonogram Cosmos does not require a separate game account. Game progress is stored on your device, with an optional manual backup to your Apple iCloud account. We do not send your game records to a developer-operated server.</p>
-  <p>The app uses Google AdMob for advertising, Apple’s App Store for the optional Remove Ads purchase, and contacts Apple to check for app updates. If you email us, we receive the information you include in your message. These services and choices are explained below.</p>
+  <p>The app uses Google AdMob for advertising, Google’s Firebase services for usage analytics and crash reports, Apple’s App Store for the optional Remove Ads purchase, and contacts Apple to check for app updates. If you email us, we receive the information you include in your message. These services and choices are explained below.</p>
 
   <h2>2. 💾 Information Stored on Your Device</h2>
   <p>The app stores information needed to run the game and preserve your progress, including:</p>
@@ -145,29 +145,38 @@
   <p>If you purchase Remove Ads, the app stops requesting ads and does not start the Google Mobile Ads SDK on later launches.</p>
   <p>For more information, see <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>, <a href="https://policies.google.com/technologies/ads">Google’s advertising information</a>, and <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK data disclosures</a>.</p>
 
-  <h2>5. 🛒 In-App Purchase (Remove Ads)</h2>
+  <h2>5. 📈 Usage Analytics and Crash Reports (Firebase)</h2>
+  <p>To understand how the game is played and to fix problems, the app uses Google Analytics for Firebase and Firebase Crashlytics. These services send information to Google, which processes it on our behalf. They are used in released versions of the app.</p>
+  <ul>
+    <li><strong>Usage analytics:</strong> app launches and sessions, screens viewed, and in-game events such as starting or completing a puzzle (puzzle and stage numbers, board size, and number of hints used), starlight earned and spent, items purchased or equipped with starlight, the companion you select, hint and ad events, and the outcome of Remove Ads purchases and restores. A completed Remove Ads purchase is also recorded with its product and price as provided by Apple.</li>
+    <li><strong>Crash reports:</strong> if the app stops unexpectedly, information about the crash, such as the stack trace, app version, device model, operating system version, and the app’s state at the time.</li>
+    <li><strong>Identifiers and device information:</strong> an app instance identifier created by Firebase, device model, operating system and app versions, language and region settings, and approximate location derived from your IP address. The advertising identifier (IDFA) is used only if you allow tracking through App Tracking Transparency.</li>
+  </ul>
+  <p>We use this information only to measure and improve the game and fix crashes. It does not include your name, email address, or the contents of your saved game, and we do not use it to identify you or sell it. The app does not currently provide an in-app setting to turn these services off. For more information, see <a href="https://firebase.google.com/support/privacy">Privacy and Security in Firebase</a> and <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.</p>
+
+  <h2>6. 🛒 In-App Purchase (Remove Ads)</h2>
   <p>Remove Ads is an optional one-time purchase made through Apple’s App Store. Apple handles payment, and the app does not receive your payment card or billing information. The app checks the signed purchase record provided by Apple on your device, without a developer-operated server, and stores whether ads are removed on your device. You can use <strong>Restore Purchase</strong> to recover the purchase on another device signed in to the same Apple account. Apple’s handling of purchase information is covered by its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</p>
 
-  <h2>6. 🔄 App Update Checks</h2>
+  <h2>7. 🔄 App Update Checks</h2>
   <p>At app launch, Nonogram Cosmos contacts Apple’s app lookup service using the app’s bundle identifier and a country code derived from your device’s region setting. Apple also receives normal network request information, such as your IP address. The app compares the returned version with the installed version and checks iOS compatibility on your device. Your puzzle progress and game records are not included in this request.</p>
   <p>If a newer compatible version is confirmed, the app asks you to update before continuing. Apple’s handling of request information is covered by its <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a>.</p>
 
-  <h2>7. 🖼️ Saving and Sharing Postcards</h2>
+  <h2>8. 🖼️ Saving and Sharing Postcards</h2>
   <p>The viewing mode lets you create postcard images and share them through the iOS share sheet. If you choose to save a postcard to Photos, iOS asks for permission to add images to your photo library. The app only adds the image you choose to save; it does not read your existing photos. Anything you share is handled by the app or service you select.</p>
 
-  <h2>8. 📮 Email Support and Privacy Requests</h2>
+  <h2>9. 📮 Email Support and Privacy Requests</h2>
   <p>The <strong>Contact us</strong> option opens an email draft addressed to <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>. The draft includes your device model, app version, and operating system version to help us investigate issues. You can review and edit the draft before sending it. The app does not send the message automatically.</p>
   <p>If you send an email, we receive your email address, message, and any attachments you choose to include. We use this information to respond to your inquiry and handle your request. Your email provider also processes the message under its own policies.</p>
   <p>For privacy questions or requests to access, correct, or delete information, contact <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>. Depending on the request, we may need to verify your identity or direct you to Apple or Google for data they control.</p>
 
-  <h2>9. 🗂️ Retention and Deletion</h2>
+  <h2>10. 🗂️ Retention and Deletion</h2>
   <p>Game records remain on your device while the app uses them. Deleting the app removes its local app data; offloading the app or restoring a device backup may preserve or restore data.</p>
   <p>Deleting the app does not necessarily delete an iCloud snapshot. You can review the available controls in your Apple account and iCloud storage settings; options vary by operating system and service. The app currently has no separate in-app command to delete its CloudKit snapshot.</p>
-  <p>Support correspondence is retained as needed to respond to requests, resolve issues, and meet applicable obligations. Apple, Google, and email providers determine retention and deletion of information they process under their own policies.</p>
+  <p>Support correspondence is retained as needed to respond to requests, resolve issues, and meet applicable obligations. Usage analytics and crash reports are kept in Firebase for the retention periods set for those services and are then deleted automatically. Apple, Google, and email providers determine retention and deletion of information they process under their own policies.</p>
 
-  <h2>10. 📝 Changes to This Policy</h2>
+  <h2>11. 📝 Changes to This Policy</h2>
   <p>We may revise this policy when app features or data practices change. We will update the date on this page and provide appropriate notice of material changes.</p>
-  <p><em>Last updated: November 6, 2026 (app update checks and Korean and Japanese versions added)</em></p>
+  <p><em>Last updated: November 10, 2026 (usage analytics and crash reports through Firebase added)</em></p>
   </article>
 
   <!-- 한국어 -->
@@ -179,7 +188,7 @@
 
   <h2>1. 📌 요약</h2>
   <p>Nonogram Cosmos는 별도의 게임 계정 가입 없이 이용할 수 있습니다. 게임 진행은 기기에 저장되며, 원하는 경우 Apple iCloud 계정에 직접 백업할 수 있습니다. 개발자가 운영하는 서버로 게임 기록을 전송하지 않습니다.</p>
-  <p>앱은 광고 제공에 Google AdMob을, 선택 사항인 광고 제거 구매에 Apple App Store를 사용하며, 앱 업데이트 확인을 위해 Apple에 접속합니다. 이메일로 문의하시면 메일에 포함된 정보를 받게 됩니다. 각 서비스와 선택 사항은 아래에서 설명합니다.</p>
+  <p>앱은 광고 제공에 Google AdMob을, 사용 분석과 크래시 보고에 Google Firebase를, 선택 사항인 광고 제거 구매에 Apple App Store를 사용하며, 앱 업데이트 확인을 위해 Apple에 접속합니다. 이메일로 문의하시면 메일에 포함된 정보를 받게 됩니다. 각 서비스와 선택 사항은 아래에서 설명합니다.</p>
 
   <h2>2. 💾 기기에 저장하는 정보</h2>
   <p>앱은 게임을 실행하고 진행 상황을 보존하는 데 필요한 정보를 기기에 저장합니다.</p>
@@ -210,29 +219,38 @@
   <p>광고 제거를 구매하면 앱은 광고를 더 이상 요청하지 않으며, 다음 실행부터 Google Mobile Ads SDK를 시작하지 않습니다.</p>
   <p>자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>, <a href="https://policies.google.com/technologies/ads">Google 광고 정보 안내</a>, <a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDK 데이터 공개</a>를 확인해 주세요.</p>
 
-  <h2>5. 🛒 인앱 구매(광고 제거)</h2>
+  <h2>5. 📈 사용 분석과 크래시 보고(Firebase)</h2>
+  <p>게임이 어떻게 이용되는지 이해하고 문제를 고치기 위해 앱은 Google Analytics for Firebase와 Firebase Crashlytics를 사용합니다. 이 서비스는 정보를 Google로 보내며, Google이 개발자를 대신해 처리합니다. 출시된 버전의 앱에서 사용됩니다.</p>
+  <ul>
+    <li><strong>사용 분석:</strong> 앱 실행과 세션, 본 화면, 게임 안 행동(퍼즐 시작·완료와 그 퍼즐·스테이지 번호, 판 크기, 사용한 힌트 수), 얻고 사용한 별빛, 별빛으로 구매하거나 장착한 아이템, 고른 동행 캐릭터, 힌트·광고 관련 이벤트, 광고 제거 구매·복원 결과. 광고 제거 구매가 완료되면 Apple이 제공한 상품과 가격도 함께 기록됩니다.</li>
+    <li><strong>크래시 보고:</strong> 앱이 비정상적으로 종료되면 스택 트레이스, 앱 버전, 기기 모델, 운영체제 버전, 종료 당시 앱 상태 등 크래시 정보</li>
+    <li><strong>식별자와 기기 정보:</strong> Firebase가 만드는 앱 인스턴스 식별자, 기기 모델, 운영체제·앱 버전, 언어·지역 설정, IP 주소로 추정한 대략적인 위치. 광고 식별자(IDFA)는 앱 추적 투명성(ATT)에서 추적을 허용한 경우에만 사용됩니다.</li>
+  </ul>
+  <p>이 정보는 게임을 측정·개선하고 크래시를 고치는 데에만 사용합니다. 이름, 이메일 주소, 저장된 게임 내용은 포함되지 않으며, 개인을 식별하거나 판매하는 데 사용하지 않습니다. 현재 앱 안에서 이 서비스를 끄는 설정은 제공하지 않습니다. 자세한 내용은 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 및 보안</a>과 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>을 확인해 주세요.</p>
+
+  <h2>6. 🛒 인앱 구매(광고 제거)</h2>
   <p>광고 제거는 Apple App Store를 통한 선택적 1회 구매입니다. 결제는 Apple이 처리하며, 앱은 결제 카드나 청구 정보를 받지 않습니다. 앱은 개발자 서버 없이 Apple이 제공한 서명된 구매 기록을 기기에서 확인하고, 광고 제거 여부를 기기에 저장합니다. 같은 Apple 계정으로 로그인한 다른 기기에서는 <strong>구매 복원</strong>으로 구매를 다시 적용할 수 있습니다. Apple의 구매 정보 처리에는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a>이 적용됩니다.</p>
 
-  <h2>6. 🔄 앱 업데이트 확인</h2>
+  <h2>7. 🔄 앱 업데이트 확인</h2>
   <p>앱을 실행하면 Nonogram Cosmos는 앱의 번들 식별자와 기기 지역 설정에서 가져온 국가 코드로 Apple의 앱 조회 서비스에 접속합니다. 이때 Apple은 IP 주소 등 일반적인 네트워크 요청 정보도 받습니다. 앱은 받은 버전을 설치된 버전과 비교하고, 기기의 iOS 호환성을 확인합니다. 퍼즐 진행과 게임 기록은 이 요청에 포함되지 않습니다.</p>
   <p>호환되는 새 버전이 확인되면 계속하기 전에 업데이트를 안내합니다. Apple의 요청 정보 처리에는 <a href="https://www.apple.com/legal/privacy/">Apple 개인정보처리방침</a>이 적용됩니다.</p>
 
-  <h2>7. 🖼️ 엽서 저장과 공유</h2>
+  <h2>8. 🖼️ 엽서 저장과 공유</h2>
   <p>감상하기에서 엽서 이미지를 만들고 iOS 공유 시트로 공유할 수 있습니다. 엽서를 사진 앱에 저장하기로 선택하면 iOS가 사진 보관함에 이미지를 추가할 권한을 요청합니다. 앱은 저장하기로 선택한 이미지만 추가하며, 기존 사진을 읽지 않습니다. 공유한 내용은 사용자가 선택한 앱이나 서비스가 처리합니다.</p>
 
-  <h2>8. 📮 이메일 문의와 개인정보 관련 요청</h2>
+  <h2>9. 📮 이메일 문의와 개인정보 관련 요청</h2>
   <p><strong>문의하기</strong>를 누르면 <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>으로 보내는 이메일 초안이 열립니다. 문제 확인을 돕기 위해 초안에는 기기 모델, 앱 버전, 운영체제 버전이 포함됩니다. 보내기 전에 초안을 확인하고 수정할 수 있으며, 앱이 메일을 자동으로 보내지 않습니다.</p>
   <p>이메일을 보내시면 이메일 주소, 메시지, 직접 첨부한 파일을 받게 됩니다. 이 정보는 문의에 답변하고 요청을 처리하는 데 사용합니다. 사용 중인 이메일 서비스도 자체 정책에 따라 메시지를 처리합니다.</p>
   <p>개인정보에 관한 질문이나 열람·정정·삭제 요청은 <a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>으로 연락해 주세요. 요청에 따라 본인 확인이 필요하거나, Apple 또는 Google이 관리하는 데이터는 해당 회사로 안내할 수 있습니다.</p>
 
-  <h2>9. 🗂️ 보관과 삭제</h2>
+  <h2>10. 🗂️ 보관과 삭제</h2>
   <p>게임 기록은 앱이 사용하는 동안 기기에 남아 있습니다. 앱을 삭제하면 기기의 앱 데이터가 제거됩니다. 앱 정리(오프로드)나 기기 백업 복원 시에는 데이터가 유지되거나 복원될 수 있습니다.</p>
   <p>앱을 삭제해도 iCloud 스냅샷이 반드시 삭제되지는 않습니다. Apple 계정과 iCloud 저장 공간 설정에서 사용할 수 있는 관리 기능을 확인할 수 있으며, 기능은 운영체제와 서비스에 따라 다릅니다. 현재 앱 안에는 CloudKit 스냅샷을 삭제하는 별도 기능이 없습니다.</p>
-  <p>문의 메일은 요청에 답변하고 문제를 해결하며 관련 의무를 이행하는 데 필요한 기간 동안 보관합니다. Apple, Google, 이메일 서비스 제공자가 처리하는 정보의 보관과 삭제는 각 회사의 정책에 따릅니다.</p>
+  <p>문의 메일은 요청에 답변하고 문제를 해결하며 관련 의무를 이행하는 데 필요한 기간 동안 보관합니다. 사용 분석과 크래시 보고는 각 Firebase 서비스에 설정된 보관 기간 동안 보관된 뒤 자동으로 삭제됩니다. Apple, Google, 이메일 서비스 제공자가 처리하는 정보의 보관과 삭제는 각 회사의 정책에 따릅니다.</p>
 
-  <h2>10. 📝 방침 변경</h2>
+  <h2>11. 📝 방침 변경</h2>
   <p>앱 기능이나 정보 처리 방식이 바뀌면 이 방침을 수정할 수 있습니다. 수정 시 이 페이지의 날짜를 갱신하고, 중요한 변경은 적절한 방법으로 알려 드립니다.</p>
-  <p><em>최종 수정: 2026년 11월 6일 (앱 업데이트 확인, 한국어·일본어 추가)</em></p>
+  <p><em>최종 수정: 2026년 11월 10일 (Firebase를 통한 사용 분석·크래시 보고 추가)</em></p>
   </article>
 
   <!-- 日本語 -->
@@ -244,7 +262,7 @@
 
   <h2>1. 📌 概要</h2>
   <p>Nonogram Cosmosは、ゲームアカウントを作成せずにご利用いただけます。ゲームの進行状況は端末に保存され、必要に応じてApple iCloudアカウントへ手動でバックアップできます。ゲームの記録を開発者が運営するサーバーへ送信することはありません。</p>
-  <p>本アプリは、広告の配信にGoogle AdMobを、任意の「広告を削除」の購入にAppleのApp Storeを使用し、アプリのアップデート確認のためにAppleへ接続します。メールでお問い合わせいただいた場合は、メールに含まれる情報を受け取ります。各サービスと選択肢について、以下で説明します。</p>
+  <p>本アプリは、広告の配信にGoogle AdMobを、利用状況の分析とクラッシュレポートにGoogleのFirebaseを、任意の「広告を削除」の購入にAppleのApp Storeを使用し、アプリのアップデート確認のためにAppleへ接続します。メールでお問い合わせいただいた場合は、メールに含まれる情報を受け取ります。各サービスと選択肢について、以下で説明します。</p>
 
   <h2>2. 💾 端末に保存する情報</h2>
   <p>本アプリは、ゲームの実行と進行状況の保持に必要な次の情報を端末に保存します。</p>
@@ -275,29 +293,38 @@
   <p>「広告を削除」を購入すると、アプリは広告をリクエストしなくなり、次回以降の起動時にGoogle Mobile Ads SDKを開始しません。</p>
   <p>詳しくは、<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>、<a href="https://policies.google.com/technologies/ads">Googleの広告に関する情報</a>、<a href="https://developers.google.com/admob/ios/privacy/data-disclosure">Google Mobile Ads SDKのデータ開示</a>をご確認ください。</p>
 
-  <h2>5. 🛒 アプリ内課金（広告を削除）</h2>
+  <h2>5. 📈 利用状況の分析とクラッシュレポート（Firebase）</h2>
+  <p>ゲームの利用状況を把握し、問題を修正するために、本アプリはGoogle Analytics for FirebaseとFirebase Crashlyticsを使用します。これらのサービスは情報をGoogleへ送信し、Googleが開発者に代わって処理します。リリース版のアプリで使用されます。</p>
+  <ul>
+    <li><strong>利用状況の分析：</strong>アプリの起動とセッション、表示した画面、ゲーム内の行動（パズルの開始・完了とそのパズル・ステージ番号、盤面のサイズ、使用したヒントの数）、獲得・使用した星明かり、星明かりで購入または装備したアイテム、選んだ仲間キャラクター、ヒントと広告に関するイベント、「広告を削除」の購入・復元の結果。「広告を削除」の購入が完了した場合は、Appleが提供する商品と価格も記録されます。</li>
+    <li><strong>クラッシュレポート：</strong>アプリが予期せず終了した場合のスタックトレース、アプリのバージョン、端末のモデル、OSのバージョン、終了時のアプリの状態などのクラッシュ情報</li>
+    <li><strong>識別子と端末情報：</strong>Firebaseが作成するアプリインスタンスID、端末のモデル、OS・アプリのバージョン、言語・地域の設定、IPアドレスから推定したおおよその位置。広告識別子（IDFA）は、App Tracking Transparencyでトラッキングを許可した場合にのみ使用されます。</li>
+  </ul>
+  <p>これらの情報は、ゲームの計測と改善、クラッシュの修正にのみ使用します。氏名、メールアドレス、保存されたゲームの内容は含まれず、個人の特定や販売には使用しません。現在、アプリ内でこれらのサービスをオフにする設定はありません。詳しくは<a href="https://firebase.google.com/support/privacy">Firebaseのプライバシーとセキュリティ</a>と<a href="https://policies.google.com/privacy">Googleプライバシーポリシー</a>をご確認ください。</p>
+
+  <h2>6. 🛒 アプリ内課金（広告を削除）</h2>
   <p>「広告を削除」は、AppleのApp Storeを通じた任意の買い切り購入です。決済はAppleが行い、アプリが支払いカードや請求先の情報を受け取ることはありません。アプリは開発者のサーバーを使わずに、Appleが提供する署名付きの購入記録を端末上で確認し、広告削除の状態を端末に保存します。同じAppleアカウントでサインインした別の端末では、<strong>購入を復元</strong>で購入を再適用できます。Appleによる購入情報の取り扱いには<a href="https://www.apple.com/legal/privacy/">Appleプライバシーポリシー</a>が適用されます。</p>
 
-  <h2>6. 🔄 アプリのアップデート確認</h2>
+  <h2>7. 🔄 アプリのアップデート確認</h2>
   <p>アプリの起動時に、Nonogram CosmosはアプリのバンドルIDと端末の地域設定から取得した国コードを使って、Appleのアプリ照会サービスに接続します。このときAppleは、IPアドレスなど通常のネットワーク通信の情報も受け取ります。アプリは取得したバージョンをインストール済みのバージョンと比較し、端末のiOSとの互換性を確認します。パズルの進行状況やゲームの記録はこの通信に含まれません。</p>
   <p>互換性のある新しいバージョンが確認された場合は、続ける前にアップデートをご案内します。Appleによる通信情報の取り扱いには<a href="https://www.apple.com/legal/privacy/">Appleプライバシーポリシー</a>が適用されます。</p>
 
-  <h2>7. 🖼️ はがきの保存と共有</h2>
+  <h2>8. 🖼️ はがきの保存と共有</h2>
   <p>鑑賞モードでは、はがき画像を作成し、iOSの共有シートで共有できます。はがきを写真アプリに保存することを選んだ場合、iOSが写真ライブラリへの画像追加の許可を求めます。アプリは保存を選んだ画像のみを追加し、既存の写真を読み取ることはありません。共有した内容は、選択したアプリやサービスによって取り扱われます。</p>
 
-  <h2>8. 📮 メールでのお問い合わせとプライバシーに関するご依頼</h2>
+  <h2>9. 📮 メールでのお問い合わせとプライバシーに関するご依頼</h2>
   <p><strong>お問い合わせ</strong>を選ぶと、<a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>宛てのメールの下書きが開きます。問題の調査に役立てるため、下書きには端末の機種、アプリのバージョン、OSのバージョンが含まれます。送信前に下書きを確認・編集でき、アプリがメールを自動で送信することはありません。</p>
   <p>メールを送信いただいた場合、メールアドレス、メッセージ、添付を選んだファイルを受け取ります。これらの情報は、お問い合わせへの回答とご依頼への対応に使用します。ご利用のメールサービスも、独自のポリシーに基づいてメッセージを取り扱います。</p>
   <p>プライバシーに関するご質問や、情報の開示・訂正・削除のご依頼は、<a href="mailto:plander.cs@gmail.com">plander.cs@gmail.com</a>までご連絡ください。ご依頼の内容によっては、本人確認をお願いする場合や、AppleまたはGoogleが管理するデータについては各社をご案内する場合があります。</p>
 
-  <h2>9. 🗂️ 保管と削除</h2>
+  <h2>10. 🗂️ 保管と削除</h2>
   <p>ゲームの記録は、アプリが使用している間、端末に保存されます。アプリを削除すると、端末のアプリデータが削除されます。アプリの取り除きや端末バックアップからの復元では、データが保持または復元される場合があります。</p>
   <p>アプリを削除しても、iCloudのスナップショットが必ず削除されるわけではありません。Appleアカウントの設定やiCloudストレージの設定で利用できる管理機能をご確認ください。機能はOSやサービスによって異なります。現在、アプリ内にCloudKitのスナップショットを削除する個別の機能はありません。</p>
-  <p>お問い合わせのメールは、ご依頼への回答、問題の解決、関連する義務の履行に必要な期間保管します。Apple、Google、メールサービス提供者が取り扱う情報の保管と削除は、各社のポリシーに従います。</p>
+  <p>お問い合わせのメールは、ご依頼への回答、問題の解決、関連する義務の履行に必要な期間保管します。利用状況の分析とクラッシュレポートは、各Firebaseサービスに設定された保管期間のあいだ保管された後、自動的に削除されます。Apple、Google、メールサービス提供者が取り扱う情報の保管と削除は、各社のポリシーに従います。</p>
 
-  <h2>10. 📝 本ポリシーの変更</h2>
+  <h2>11. 📝 本ポリシーの変更</h2>
   <p>アプリの機能や情報の取り扱い方法が変わった場合、本ポリシーを改訂することがあります。改訂時にはこのページの日付を更新し、重要な変更は適切な方法でお知らせします。</p>
-  <p><em>最終更新日：2026年11月6日（アプリのアップデート確認、韓国語・日本語版を追加）</em></p>
+  <p><em>最終更新日：2026年11月10日（Firebaseによる利用状況の分析とクラッシュレポートを追加）</em></p>
   </article>
 
   <hr />
